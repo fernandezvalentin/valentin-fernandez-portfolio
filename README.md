@@ -2,8 +2,6 @@
 
 Portfolio profesional desarrollado con un enfoque en la estética de alta gama, el rendimiento optimizado y una experiencia de usuario fluida.
 
-![Preview Image](https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1280&auto=format&fit=crop)
-
 ## 🚀 Tecnologías Principales
 
 - **React 19** + **TypeScript**
