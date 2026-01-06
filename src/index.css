@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #00f2ff;
+  --color-secondary: #7000ff;
+  --color-bg-dark: #030305;
+  --color-bg-card: rgba(255, 255, 255, 0.015);
+  --color-text-muted: rgba(255, 255, 255, 0.5);
+  
+  --font-sans: "Poppins", sans-serif;
+  
+  --backdrop-blur-24: 24px;
+}
+
+@layer base {
+  :root {
+    --primary: #00f2ff;
+    --secondary: #7000ff;
+    --bg-dark: #030305;
+    --bg-card: rgba(255, 255, 255, 0.015);
+    --text-main: #ffffff;
+    --text-muted: rgba(255, 255, 255, 0.5);
+    --font-family: 'Poppins', sans-serif;
+    --transition: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    --glow: rgba(0, 242, 255, 0.05);
+  }
+
+  body {
+    @apply bg-bg-dark text-white font-sans leading-relaxed overflow-x-hidden relative;
+    scroll-behavior: smooth;
+  }
+
+  /* Background Aura Effect */
+  body::before {
+    content: '';
+    @apply fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-screen h-screen pointer-events-none;
+    background: radial-gradient(circle at center, var(--glow) 0%, transparent 70%);
+    z-index: -1;
+  }
+
+  section {
+    scroll-margin-top: 100px;
+  }
+
+  a {
+    @apply transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)];
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-bg-card backdrop-blur-24 border border-white/5 rounded-[20px] transition-all duration-500 overflow-hidden;
+  }
+
+  .glass:hover {
+    @apply border-white/10 bg-white/5 -translate-y-1 shadow-[0_20px_40px_-20px_rgba(0,0,0,0.8)];
+  }
+
+  .btn-primary {
+    @apply bg-primary text-bg-dark px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition-all;
+  }
+
+  .btn-outline {
+    @apply border border-white/10 px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition-all hover:border-primary hover:text-primary;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-br from-primary to-secondary bg-clip-text text-transparent pr-[0.1em];
+  }
+
+  .badge {
+    @apply text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-lg bg-primary/5 text-primary border border-primary/10;
+  }
+
+  /* iMac Mockup Styles */
+  .monitor-area {
+    @apply relative w-full aspect-[16/11] rounded-xl overflow-hidden flex items-end justify-center pb-5 transition-all duration-500 bg-[#111118] border border-white/5;
+  }
+
+  .github-bar {
+    @apply w-full px-6 py-4 bg-white/[0.02] border border-white/5 rounded-xl mb-10 flex items-center justify-start gap-3 font-semibold text-white;
+  }
+}
