@@ -1,73 +1,53 @@
-# React + TypeScript + Vite
+# valentin.dev | Frontend Web Developer & Web Designer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio profesional desarrollado con un enfoque en la estética de alta gama, el rendimiento optimizado y una experiencia de usuario fluida.
 
-Currently, two official plugins are available:
+![Preview Image](https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1280&auto=format&fit=crop)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías Principales
 
-## React Compiler
+- **React 19** + **TypeScript**
+- **Vite 7**
+- **Tailwind CSS v4** (Último estándar de procesamiento de CSS)
+- **Framer Motion** (Animaciones de interfaz premium)
+- **Lenis Smooth Scroll** (Scroll cinematográfico y suave)
+- **React Parallax Tilt** (Efectos 3D interactivos en proyectos)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Características Destacadas
 
-## Expanding the ESLint configuration
+### 🖥️ iMac Mockups
+Sección de proyectos diseñada con mockups de iMac realistas, utilizando efectos de inclinación 3D que responden al movimiento del cursor para una experiencia inmersiva.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🌊 Diseño "Aura" & Glassmorphism
+Interfaz limpia con fondos de gradientes radiales suaves y componentes con efectos de desenfoque de cristal (glassmorphism), optimizados para una estética moderna y profesional.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 📱 Full Responsiveness
+Optimización total para dispositivos móviles, tablets y monitores de alta resolución, incluyendo un menú de navegación adaptable y grids dinámicos.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 📧 Integración de Contacto
+Acceso directo por Email, WhatsApp y LinkedIn con diseño minimalista y botones de acción rápida.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠️ Instalación y Uso
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. **Clonar el repositorio:**
+   ```bash
+   git clone https://github.com/fernandezvalentin/valentin-fernandez-portfolio.git
+   ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2. **Instalar dependencias:**
+   ```bash
+   npm install
+   ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3. **Iniciar servidor de desarrollo:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Construir para producción:**
+   ```bash
+   npm run build
+   ```
+
+## 📝 Licencia
+© 2026 Valentin Fernandez. Todos los derechos reservados.
